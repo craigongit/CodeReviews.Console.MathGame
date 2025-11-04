@@ -20,5 +20,6 @@ public class Operations
         
         // Save game
         var game = new Game("Addition", operands[0], operands[1]);
+        _gameHistory.Add(game);
     }
 }

@@ -1,8 +1,12 @@
 ﻿using MathGame;
 using Spectre.Console;
 
+var operations = new Operations();
+
 while (true)
 {
+    Console.Clear();
+    
     var userChoice = AnsiConsole.Prompt(
         new SelectionPrompt<UserOptions>()
             .Title("Select an option!")
@@ -11,7 +15,7 @@ while (true)
     switch (userChoice)
     {
         case UserOptions.Addition:
-            // Operations.Addition()
+            operations.Addition();
             break;
         case UserOptions.Subtraction:
             // Operations.Subtraction()
@@ -23,7 +27,7 @@ while (true)
             // Operations.Division()
             break;
         case UserOptions.History:
-            // Operations.History()
+            operations.ShowHistory();
             break;
         case UserOptions.Quit:
             // Operations.Quit()

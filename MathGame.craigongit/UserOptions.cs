@@ -1,6 +1,6 @@
 namespace MathGame;
 
-public enum UserOption
+public enum UserOptions
 {
     Addition,
     Subtraction,

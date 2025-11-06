@@ -2,14 +2,14 @@ using Spectre.Console;
 
 namespace MathGame;
 
-internal class Helpers
+internal static class Helpers
 {
-    private int GenerateNumber()
+    private static int GenerateNumber()
     {
         return new Random().Next(1, 100);
     }
     
-    internal int[] GenerateOperands()
+    internal static int[] GenerateOperands()
     {
         // Generated operands must results into a integer when division is performed 
         int firstOperand = GenerateNumber();
@@ -20,10 +20,10 @@ internal class Helpers
             secondOperand = GenerateNumber();
         }
 
-        return new int[]{firstOperand, secondOperand};
+        return [firstOperand, secondOperand];
     }
 
-    internal string VerifyAnswer(int correctAnswer, int userAnswer)
+    internal static string VerifyAnswer(int correctAnswer, int userAnswer)
     {
         if (userAnswer == correctAnswer)
         {
@@ -32,7 +32,7 @@ internal class Helpers
         return "Failed!";
     }
     
-    internal void DisplayMessage(string message, string color = "yellow")
+    internal static void DisplayMessage(string message, string color = "yellow")
     {
         AnsiConsole.MarkupLine($"[{color}]{message}[/]");
     }

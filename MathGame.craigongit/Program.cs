@@ -18,19 +18,19 @@ while (true)
             operations.Addition();
             break;
         case UserOptions.Subtraction:
-            // Operations.Subtraction()
+            operations.Subtraction();
             break;
         case UserOptions.Multiplication:
-            // Operations.Multiplication()
+            operations.Multiplication();
             break;
         case UserOptions.Division:
-            // Operations.Division()
+            operations.Division();
             break;
         case UserOptions.History:
             operations.ShowHistory();
             break;
         case UserOptions.Quit:
-            // Operations.Quit()
+            // operations.Quit();
             break;
     }
 }

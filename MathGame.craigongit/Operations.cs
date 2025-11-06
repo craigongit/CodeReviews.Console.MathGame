@@ -1,24 +1,24 @@
 using Spectre.Console;
+using static MathGame.Helpers;
 
 namespace MathGame;
 
-public class Operations
+internal class Operations
 {
-    private List<Game> _gameHistory = [];
-    private Helpers _helpers = new Helpers();
+    private readonly List<Game> _gameHistory = [];
 
-    public void Addition()
+    internal void Addition()
     {
-        var operands = _helpers.GenerateOperands();
+        var operands = GenerateOperands();
         var correctAnswer = operands[0] + operands[1];
         
-        _helpers.DisplayMessage("Solve this operation:");
+        DisplayMessage("Solve this operation:");
         
         var userAnswer = AnsiConsole.Ask<int>($"[teal]{operands[0]} + {operands[1]}[/]");
 
-        var resultMessage = _helpers.VerifyAnswer(userAnswer, correctAnswer);
+        var resultMessage = VerifyAnswer(userAnswer, correctAnswer);
 
-        _helpers.DisplayMessage(
+        DisplayMessage(
             resultMessage,
             resultMessage == "Succeed!" ? "green" : "red");
         
@@ -26,11 +26,80 @@ public class Operations
         var game = new Game("Addition", operands[0], operands[1], "+", resultMessage);
         _gameHistory.Add(game);
 
-        _helpers.DisplayMessage("Press Any Key to Continue!");
+        DisplayMessage("Press Any Key to Continue!");
         Console.ReadKey();
     }
 
-    public void ShowHistory()
+    internal void Subtraction()
+    {
+        var operands = GenerateOperands();
+        var correctAnswer = operands[0] - operands[1];
+        
+        DisplayMessage("Solve this operation:");
+        
+        var userAnswer = AnsiConsole.Ask<int>($"[teal]{operands[0]} - {operands[1]}[/]");
+
+        var resultMessage = VerifyAnswer(userAnswer, correctAnswer);
+
+        DisplayMessage(
+            resultMessage,
+            resultMessage == "Succeed!" ? "green" : "red");
+        
+        // Save game
+        var game = new Game("Subtraction", operands[0], operands[1], "-", resultMessage);
+        _gameHistory.Add(game);
+
+        DisplayMessage("Press Any Key to Continue!");
+        Console.ReadKey();
+    }
+
+    internal void Multiplication()
+    {
+        var operands = GenerateOperands();
+        var correctAnswer = operands[0] * operands[1];
+        
+        DisplayMessage("Solve this operation:");
+        
+        var userAnswer = AnsiConsole.Ask<int>($"[teal]{operands[0]} * {operands[1]}[/]");
+
+        var resultMessage = VerifyAnswer(userAnswer, correctAnswer);
+
+        DisplayMessage(
+            resultMessage,
+            resultMessage == "Succeed!" ? "green" : "red");
+        
+        // Save game
+        var game = new Game("Multiplication", operands[0], operands[1], "*", resultMessage);
+        _gameHistory.Add(game);
+
+        DisplayMessage("Press Any Key to Continue!");
+        Console.ReadKey();
+    }
+
+    internal void Division()
+    {
+        var operands = GenerateOperands();
+        var correctAnswer = operands[0] / operands[1];
+        
+        DisplayMessage("Solve this operation:");
+        
+        var userAnswer = AnsiConsole.Ask<int>($"[teal]{operands[0]} / {operands[1]}[/]");
+
+        var resultMessage = VerifyAnswer(userAnswer, correctAnswer);
+
+        DisplayMessage(
+            resultMessage,
+            resultMessage == "Succeed!" ? "green" : "red");
+        
+        // Save game
+        var game = new Game("Division", operands[0], operands[1], "/", resultMessage);
+        _gameHistory.Add(game);
+
+        DisplayMessage("Press Any Key to Continue!");
+        Console.ReadKey();
+    }
+
+    internal void ShowHistory()
     {
         var table = new Table();
         table.Border(TableBorder.Rounded);
@@ -41,7 +110,7 @@ public class Operations
         
         foreach (var game in _gameHistory)
         {
-            // Color when displaying result in the table
+            // Result color in the table
             string resultColor = (game.ResultMessage == "Succeed!" ? "green" : "red");
             
             table.AddRow(
@@ -51,7 +120,7 @@ public class Operations
         }
         
         AnsiConsole.Write(table);
-        _helpers.DisplayMessage("Press Any Key to Continue!");
+        DisplayMessage("Press Any Key to Continue!");
         Console.ReadKey();
     }
 }

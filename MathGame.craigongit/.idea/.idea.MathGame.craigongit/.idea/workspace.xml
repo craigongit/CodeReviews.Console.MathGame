@@ -8,7 +8,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6519b100-4ab0-4c66-a3b3-182cae61bfd3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MathGame.craigongit/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MathGame.craigongit/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Operations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Operations.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
     </list>
@@ -29,7 +28,9 @@
     <setting file="mock:///home/craigology/Desktop/tcsa/CodeReviews.Console.MathGame/MathGame.craigongit/Helpers.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///home/craigology/Desktop/tcsa/CodeReviews.Console.MathGame/MathGame.craigongit/Helpers.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///home/craigology/Desktop/tcsa/CodeReviews.Console.MathGame/MathGame.craigongit/Operations.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/craigology/Desktop/tcsa/CodeReviews.Console.MathGame/MathGame.craigongit/Operations.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Operations.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///home/craigology/Desktop/tcsa/CodeReviews.Console.MathGame/MathGame.craigongit/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///home/craigology/Desktop/tcsa/CodeReviews.Console.MathGame/MathGame.craigongit/Program.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -98,7 +99,7 @@
       <workItem from="1762270282821" duration="5294000" />
       <workItem from="1762275663044" duration="3629000" />
       <workItem from="1762279425059" duration="786000" />
-      <workItem from="1762455255584" duration="5025000" />
+      <workItem from="1762455255584" duration="5879000" />
     </task>
     <task id="LOCAL-00001" summary="Make basic app flow">
       <option name="closed" value="true" />
@@ -164,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762462952257</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Implement Quit() method">
+      <option name="closed" value="true" />
+      <created>1762465035662</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1762465035662</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,7 +202,8 @@
     <MESSAGE value="Set Helpers as static" />
     <MESSAGE value="Implement remaing SMD operations" />
     <MESSAGE value="Update program entry to handle SMD operations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update program entry to handle SMD operations" />
+    <MESSAGE value="Implement Quit() method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement Quit() method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

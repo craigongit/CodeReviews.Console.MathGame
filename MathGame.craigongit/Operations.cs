@@ -99,11 +99,6 @@ internal class Operations
         Console.ReadKey();
     }
 
-    internal void Quit()
-    {
-        Environment.Exit(0);
-    }
-
     internal void ShowHistory()
     {
         var table = new Table();

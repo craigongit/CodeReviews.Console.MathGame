@@ -30,7 +30,7 @@ while (true)
             operations.ShowHistory();
             break;
         case UserOptions.Quit:
-            // operations.Quit();
+            operations.Quit();
             break;
     }
 }

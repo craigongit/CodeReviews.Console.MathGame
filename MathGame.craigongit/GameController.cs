@@ -5,8 +5,12 @@ namespace MathGame;
 
 public static class GameController
 {
+    // score variable persisting during the whole program lifecycle
     internal static int Score = 0;
     
+    // Triggers a new game round of 5 questions 
+    // Each of the 5 operation types is chosen randomly
+    // from the OperationTypes enum
     internal static void PlayGame()
     {
         Random random = new Random();
@@ -36,6 +40,7 @@ public static class GameController
             Console.Clear();
         }
         
+        // Display score after a game round
         DisplayMessage("-------------------------");
         DisplayMessage($"You finished with a score of: {Score} / {GamesPlayed.Count}");
         DisplayMessage("-------------------------");

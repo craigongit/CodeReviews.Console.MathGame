@@ -7,6 +7,8 @@ namespace MathGame;
 
 internal static class OperationsController
 {
+    // List of all games played,
+    // all rounds considered
     internal static List<Game> GamesPlayed = [];
     
     internal static void DoOperation(string sign)

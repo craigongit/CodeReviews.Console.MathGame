@@ -6,7 +6,7 @@ namespace MathGame;
 public static class GameController
 {
     // score variable persisting during the whole program lifecycle
-    internal static int Score = 0;
+    internal static int Score;
     
     // Triggers a new game round of 5 questions 
     // Each of the 5 operation types is chosen randomly

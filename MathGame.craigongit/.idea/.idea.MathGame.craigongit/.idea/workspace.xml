@@ -9,6 +9,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6519b100-4ab0-4c66-a3b3-182cae61bfd3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MathGame.craigongit/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MathGame.craigongit/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OperationsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OperationsController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,17 +23,25 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Game.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///home/craigology/Desktop/tcsa/CodeReviews.Console.MathGame/MathGame.craigongit/GameController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Helpers.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///home/craigology/Desktop/tcsa/CodeReviews.Console.MathGame/MathGame.craigongit/Helpers.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///home/craigology/Desktop/tcsa/CodeReviews.Console.MathGame/MathGame.craigongit/Helpers.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///home/craigology/Desktop/tcsa/CodeReviews.Console.MathGame/MathGame.craigongit/Operations.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Operations.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///home/craigology/Desktop/tcsa/CodeReviews.Console.MathGame/MathGame.craigongit/Helpers.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/craigology/Desktop/tcsa/CodeReviews.Console.MathGame/MathGame.craigongit/Helpers.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/Game.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///home/craigology/Desktop/tcsa/CodeReviews.Console.MathGame/MathGame.craigongit/OperationsController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/craigology/Desktop/tcsa/CodeReviews.Console.MathGame/MathGame.craigongit/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/craigology/Desktop/tcsa/CodeReviews.Console.MathGame/MathGame.craigongit/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///home/craigology/Desktop/tcsa/CodeReviews.Console.MathGame/MathGame.craigongit/Program.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -45,7 +55,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    ".NET Project.MathGame.executor": "Debug",
+    ".NET Project.MathGame.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -164,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762462952257</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Create individual Game class">
+      <option name="closed" value="true" />
+      <created>1762542549907</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1762542549907</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,7 +211,8 @@
     <MESSAGE value="Set Helpers as static" />
     <MESSAGE value="Implement remaing SMD operations" />
     <MESSAGE value="Update program entry to handle SMD operations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update program entry to handle SMD operations" />
+    <MESSAGE value="Create individual Game class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create individual Game class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

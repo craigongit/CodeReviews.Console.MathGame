@@ -1,10 +1,10 @@
+using static MathGame.Helpers;
 using static MathGame.OperationsController;
 
 namespace MathGame;
 
 public static class GameController
 {
-
     internal static int Score = 0;
     
     internal static void PlayGame()
@@ -35,12 +35,13 @@ public static class GameController
             
             Console.Clear();
         }
+        
+        DisplayMessage("-------------------------");
+        DisplayMessage($"You finished with a score of: {Score} / {GamesPlayed.Count}");
+        DisplayMessage("-------------------------");
+        
+        Console.WriteLine("Press Any Key to Continue!");
 
         Console.ReadKey();
-    }
-
-    internal static void ShowHistory()
-    {
-        throw new NotImplementedException();
     }
 }

@@ -1,6 +1,7 @@
 ﻿using MathGame;
 using Spectre.Console;
 using static MathGame.GameController;
+using static MathGame.OperationsController;
 
 // TO-DO
 // Implement score system
@@ -22,7 +23,8 @@ while (true)
             PlayGame();
             break;
         case Enums.UserOptions.History:
-            // operations.ShowHistory();
+            ShowHistory();
+            break;
         case Enums.UserOptions.Quit:
             Environment.Exit(0);
             break;

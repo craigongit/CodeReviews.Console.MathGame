@@ -1,3 +1,4 @@
+using MathGame.Models;
 using static MathGame.Helpers;
 using static MathGame.GameController;
 using Spectre.Console;
@@ -6,6 +7,8 @@ namespace MathGame;
 
 internal static class OperationsController
 {
+    internal static List<Game> GamesPlayed = [];
+    
     internal static void DoOperation(string sign)
     {
         var operands = GenerateOperands();
@@ -41,6 +44,34 @@ internal static class OperationsController
             resultMessage,
             resultMessage == "Succeed!" ? "green" : "red");
 
+        // Save game
+        var currentGame = new Game($"{operands[0]} {sign} {operands[1]}", resultMessage);
+        GamesPlayed.Add(currentGame);
+
+        DisplayMessage("Press Any Key to Continue!");
+        Console.ReadKey();
+    }
+    
+    internal static void ShowHistory()
+    {
+        var table = new Table();
+        table.Border(TableBorder.Rounded);
+
+        table.AddColumn("[yellow]Operation[/]");
+        table.AddColumn("[yellow]User result[/]");
+        
+        foreach (var game in GamesPlayed)
+        {
+            // Result color in the table
+            string resultColor = (game.ResultMessage == "Succeed!" ? "green" : "red");
+            
+            table.AddRow(
+                $"[teal]{game.Expression}[/]",
+                $"[{resultColor}]{game.ResultMessage}[/]");
+        }
+        
+        AnsiConsole.Write(table);
+        
         DisplayMessage("Press Any Key to Continue!");
         Console.ReadKey();
     }

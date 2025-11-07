@@ -1,0 +1,106 @@
+Index: Helpers.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>using Spectre.Console;\n\nnamespace MathGame;\n\ninternal static class Helpers\n{\n    private static int GenerateNumber()\n    {\n        return new Random().Next(1, 100);\n    }\n    \n    internal static int[] GenerateOperands()\n    {\n        // Generated operands must results into a integer when division is performed \n        int firstOperand = GenerateNumber();\n        int secondOperand = GenerateNumber();\n\n        while (firstOperand % secondOperand != 0)\n        {\n            secondOperand = GenerateNumber();\n        }\n\n        return [firstOperand, secondOperand];\n    }\n\n    internal static string VerifyAnswer(int correctAnswer, int userAnswer)\n    {\n        if (userAnswer == correctAnswer)\n        {\n            return \"Succeed!\";\n        }\n        return \"Failed!\";\n    }\n    \n    internal static void DisplayMessage(string message, string color = \"yellow\")\n    {\n        AnsiConsole.MarkupLine($\"[{color}]{message}[/]\");\n    }\n    \n\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Helpers.cs b/Helpers.cs
+--- a/Helpers.cs	(revision d0466aa4529bc189b9c9a18dcb4415780ffb1f04)
++++ b/Helpers.cs	(date 1762522525620)
+@@ -36,6 +36,4 @@
+     {
+         AnsiConsole.MarkupLine($"[{color}]{message}[/]");
+     }
+-    
+-
+ }
+\ No newline at end of file
+Index: Program.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>using MathGame;\nusing Spectre.Console;\n\n// TO-DO\n// Implement score system\n// A game has 5 random operations\n// \nwhile (true)\n{\n    Console.Clear();\n    \n    var userChoice = AnsiConsole.Prompt(\n        new SelectionPrompt<Enums.UserOptions>()\n            .Title(\"Select an option!\")\n            .AddChoices(Enum.GetValues<Enums.UserOptions>()));\n\n    switch (userChoice)\n    {\n        case Enums.UserOptions.PlayGame:\n            // operations.PlayGame();\n            break;\n        case Enums.UserOptions.History:\n            // operations.ShowHistory();\n        case Enums.UserOptions.Quit:\n            Environment.Exit(0);\n            break;\n    }\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Program.cs b/Program.cs
+--- a/Program.cs	(revision d0466aa4529bc189b9c9a18dcb4415780ffb1f04)
++++ b/Program.cs	(date 1762522714637)
+@@ -1,28 +1,36 @@
+ using MathGame;
+ using Spectre.Console;
++using static MathGame.Helpers;
+ 
+ // TO-DO
+ // Implement score system
+ // A game has 5 random operations
+ // 
+-while (true)
++
++DisplayMessage("Welcome to the Math Game");
++
++var gameOn = true;
++
++while (gameOn)
+ {
+     Console.Clear();
+     
+     var userChoice = AnsiConsole.Prompt(
+-        new SelectionPrompt<Enums.UserOptions>()
++        new SelectionPrompt<Enums.GameOptions>()
+             .Title("Select an option!")
+-            .AddChoices(Enum.GetValues<Enums.UserOptions>()));
++            .AddChoices(Enum.GetValues<Enums.GameOptions>()));
+ 
+     switch (userChoice)
+     {
+-        case Enums.UserOptions.PlayGame:
++        case Enums.GameOptions.NewGame:
+             // operations.PlayGame();
+             break;
+-        case Enums.UserOptions.History:
+-            // operations.ShowHistory();
+-        case Enums.UserOptions.Quit:
+-            Environment.Exit(0);
++        case Enums.GameOptions.History:
++        // operations.ShowHistory();
++        case Enums.GameOptions.Quit:
++            gameOn = false;
+             break;
+     }
+-}
+\ No newline at end of file
++}
++
++Environment.Exit(0);
+\ No newline at end of file
+Index: Enums.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Enums.cs b/Enums.cs
+deleted file mode 100644
+--- a/Enums.cs	(revision d0466aa4529bc189b9c9a18dcb4415780ffb1f04)
++++ /dev/null	(revision d0466aa4529bc189b9c9a18dcb4415780ffb1f04)
+@@ -1,19 +0,0 @@
+-namespace MathGame;
+-
+-public static class Enums
+-{
+-    public enum UserOptions
+-    {
+-        PlayGame,
+-        History,
+-        Quit
+-    }
+-    
+-    public enum Operations
+-    {
+-        Addition,
+-        Subtraction,
+-        Multiplication,
+-        Division
+-    }
+-}
+\ No newline at end of file

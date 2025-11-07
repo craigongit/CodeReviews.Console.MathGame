@@ -1,0 +1,22 @@
+Index: UserOptions.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>namespace MathGame;\n\npublic enum UserOptions\n{\n    Addition,\n    Subtraction,\n    Multiplication,\n    Division,\n    History,\n    Quit\n}
+===================================================================
+diff --git a/UserOptions.cs b/UserOptions.cs
+--- a/UserOptions.cs	(revision f8d5a863f7f6dbf3a68bda3af818c31b9f896cc7)
++++ b/UserOptions.cs	(date 1762523601811)
+@@ -2,10 +2,7 @@
+ 
+ public enum UserOptions
+ {
+-    Addition,
+-    Subtraction,
+-    Multiplication,
+-    Division,
+-    History,
++    PlayGame,
++    ShowHistory,
+     Quit
+ }
+\ No newline at end of file

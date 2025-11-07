@@ -8,6 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6519b100-4ab0-4c66-a3b3-182cae61bfd3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MathGame.craigongit/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MathGame.craigongit/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,9 +28,7 @@
     <setting file="mock:///home/craigology/Desktop/tcsa/CodeReviews.Console.MathGame/MathGame.craigongit/Helpers.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///home/craigology/Desktop/tcsa/CodeReviews.Console.MathGame/MathGame.craigongit/Helpers.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///home/craigology/Desktop/tcsa/CodeReviews.Console.MathGame/MathGame.craigongit/Operations.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///home/craigology/Desktop/tcsa/CodeReviews.Console.MathGame/MathGame.craigongit/Operations.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Operations.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///home/craigology/Desktop/tcsa/CodeReviews.Console.MathGame/MathGame.craigongit/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///home/craigology/Desktop/tcsa/CodeReviews.Console.MathGame/MathGame.craigongit/Program.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -44,22 +43,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Project.MathGame.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Project.MathGame.executor": "Debug",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="MathGame" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -98,7 +97,8 @@
       <workItem from="1762270282821" duration="5294000" />
       <workItem from="1762275663044" duration="3629000" />
       <workItem from="1762279425059" duration="786000" />
-      <workItem from="1762455255584" duration="6282000" />
+      <workItem from="1762455255584" duration="5025000" />
+      <workItem from="1762532303509" duration="3261000" />
     </task>
     <task id="LOCAL-00001" summary="Make basic app flow">
       <option name="closed" value="true" />
@@ -164,23 +164,7 @@
       <option name="project" value="LOCAL" />
       <updated>1762462952257</updated>
     </task>
-    <task id="LOCAL-00009" summary="Implement Quit() method">
-      <option name="closed" value="true" />
-      <created>1762465035662</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1762465035662</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Remove the Quit method to hardcode it in the main class">
-      <option name="closed" value="true" />
-      <created>1762465818524</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1762465818524</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,9 +193,7 @@
     <MESSAGE value="Set Helpers as static" />
     <MESSAGE value="Implement remaing SMD operations" />
     <MESSAGE value="Update program entry to handle SMD operations" />
-    <MESSAGE value="Implement Quit() method" />
-    <MESSAGE value="Remove the Quit method to hardcode it in the main class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove the Quit method to hardcode it in the main class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update program entry to handle SMD operations" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

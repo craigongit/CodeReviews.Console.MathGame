@@ -1,10 +1,12 @@
 ﻿using MathGame;
 using Spectre.Console;
+using static MathGame.GameController;
 
 // TO-DO
 // Implement score system
 // A game has 5 random operations
 // 
+
 while (true)
 {
     Console.Clear();
@@ -17,7 +19,7 @@ while (true)
     switch (userChoice)
     {
         case Enums.UserOptions.PlayGame:
-            // operations.PlayGame();
+            PlayGame();
             break;
         case Enums.UserOptions.History:
             // operations.ShowHistory();

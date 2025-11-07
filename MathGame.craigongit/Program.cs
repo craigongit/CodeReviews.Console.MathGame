@@ -1,35 +1,27 @@
 ﻿using MathGame;
 using Spectre.Console;
 
-var operations = new Operations();
-
+// TO-DO
+// Implement score system
+// A game has 5 random operations
+// 
 while (true)
 {
     Console.Clear();
     
     var userChoice = AnsiConsole.Prompt(
-        new SelectionPrompt<UserOptions>()
+        new SelectionPrompt<Enums.UserOptions>()
             .Title("Select an option!")
-            .AddChoices(Enum.GetValues<UserOptions>()));
+            .AddChoices(Enum.GetValues<Enums.UserOptions>()));
 
     switch (userChoice)
     {
-        case UserOptions.Addition:
-            operations.Addition();
+        case Enums.UserOptions.PlayGame:
+            // operations.PlayGame();
             break;
-        case UserOptions.Subtraction:
-            operations.Subtraction();
-            break;
-        case UserOptions.Multiplication:
-            operations.Multiplication();
-            break;
-        case UserOptions.Division:
-            operations.Division();
-            break;
-        case UserOptions.History:
-            operations.ShowHistory();
-            break;
-        case UserOptions.Quit:
+        case Enums.UserOptions.History:
+            // operations.ShowHistory();
+        case Enums.UserOptions.Quit:
             Environment.Exit(0);
             break;
     }

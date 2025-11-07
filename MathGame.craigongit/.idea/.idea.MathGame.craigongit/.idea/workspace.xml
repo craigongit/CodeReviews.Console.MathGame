@@ -8,7 +8,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6519b100-4ab0-4c66-a3b3-182cae61bfd3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Operations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Operations.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +98,7 @@
       <workItem from="1762270282821" duration="5294000" />
       <workItem from="1762275663044" duration="3629000" />
       <workItem from="1762279425059" duration="786000" />
-      <workItem from="1762455255584" duration="5879000" />
+      <workItem from="1762455255584" duration="6282000" />
     </task>
     <task id="LOCAL-00001" summary="Make basic app flow">
       <option name="closed" value="true" />
@@ -173,7 +172,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762465035662</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Remove the Quit method to hardcode it in the main class">
+      <option name="closed" value="true" />
+      <created>1762465818524</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1762465818524</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,7 +210,8 @@
     <MESSAGE value="Implement remaing SMD operations" />
     <MESSAGE value="Update program entry to handle SMD operations" />
     <MESSAGE value="Implement Quit() method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement Quit() method" />
+    <MESSAGE value="Remove the Quit method to hardcode it in the main class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove the Quit method to hardcode it in the main class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
